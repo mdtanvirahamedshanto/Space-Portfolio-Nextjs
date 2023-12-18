@@ -1,3 +1,4 @@
+import Navbar from "@/components/main/Navbar";
 import StarsCanva from "@/components/main/StarBackgroud";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -21,6 +22,7 @@ export default function RootLayout({
         className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
         <StarsCanva />
+        <Navbar />
         {children}
       </body>
     </html>
